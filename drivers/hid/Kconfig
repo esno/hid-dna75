@@ -296,6 +296,14 @@ config HID_EZKEY
 	---help---
 	Support for Ezkey BTC 8193 keyboard.
 
+config HID_EVOLV
+	tristate "Evolv DNA75"
+	depends on USB_HID
+	default n
+	---help---
+	Support for Evolv DNA75 power regulated digital switch-mode DC-DC converter
+	for personal vaporizers.
+
 config HID_GEMBIRD
 	tristate "Gembird Joypad"
 	depends on HID
